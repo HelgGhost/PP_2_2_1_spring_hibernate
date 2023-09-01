@@ -26,7 +26,7 @@ public class MainApp {
       userService.add(new User("User4", "Lastname4", "user4@mail.ru",
               new Car("BMV X1",2)));;
 
-      List<User> users = userService.listUsers();
+      //List<User> users = userService.listUsers();
       List<User> users = userService.listUsersByModelSeries("BMV X1",2);
       for (User user : users) {
          System.out.println("Id = "+user.getId());
